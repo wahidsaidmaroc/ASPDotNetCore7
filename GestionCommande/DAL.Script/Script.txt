@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "data source=localhost\sqlexpress;initial catalog= FormationOumdinAcademy; persist security info=True;user id=formationuser;password=Password;multipleactiveresultsets=True" Microsoft.EntityFrameworkCore.SqlServer -Context DBContext -OutputDir Models -ContextDir DB -project DAL.Script -f -verbose
