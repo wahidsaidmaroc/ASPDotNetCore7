@@ -24,6 +24,8 @@ public partial class FormationOumdinAcademyContext : DbContext
 
     public virtual DbSet<TProduit> TProduit { get; set; }
 
+    public virtual DbSet<VCommande> VCommande { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<TBonCommande>(entity =>
@@ -122,6 +124,34 @@ public partial class FormationOumdinAcademyContext : DbContext
                 .HasConstraintName("FK_T_Produit_T_Categorie");
         });
 
+        modelBuilder.Entity<VCommande>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("V_Commande");
+
+            entity.Property(e => e.Client)
+                .HasMaxLength(50)
+                .HasColumnName("client");
+            entity.Property(e => e.DateCommande)
+                .HasColumnType("date")
+                .HasColumnName("dateCommande");
+            entity.Property(e => e.EtatCommande).HasColumnName("etatCommande");
+            entity.Property(e => e.PrixUnitaire)
+                .HasColumnType("decimal(18, 2)")
+                .HasColumnName("prixUnitaire");
+            entity.Property(e => e.Qnt)
+                .HasColumnType("decimal(18, 2)")
+                .HasColumnName("qnt");
+            entity.Property(e => e.Total)
+                .HasColumnType("decimal(18, 2)")
+                .HasColumnName("total");
+            entity.Property(e => e.TotalHt)
+                .HasColumnType("decimal(18, 4)")
+                .HasColumnName("totalHT");
+        });
+
+        OnModelCreatingGeneratedProcedures(modelBuilder);
         OnModelCreatingPartial(modelBuilder);
     }
 

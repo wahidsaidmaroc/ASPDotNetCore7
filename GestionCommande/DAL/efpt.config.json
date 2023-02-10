@@ -33,6 +33,14 @@
       {
          "Name": "[dbo].[T_Produit]",
          "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[V_Commande]",
+         "ObjectType": 3
+      },
+      {
+         "Name": "[dbo].[PS_Commande]",
+         "ObjectType": 1
       }
    ],
    "UiHint": "SniflyVM\\SQLEXPRESS.FormationOumdinAcademy",
