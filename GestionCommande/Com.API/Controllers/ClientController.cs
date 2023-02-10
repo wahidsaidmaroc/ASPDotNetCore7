@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Dto;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 
@@ -40,8 +41,19 @@ namespace Com.API.Controllers
 
         // POST api/<Client>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult Post([FromBody] ClientCreateDto obj)
         {
+            try
+            {
+                return Ok( _clientService.Create(obj));
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.ToString();
+                return NotFound(msg);
+                return BadRequest(msg);
+               // _logger.
+            }
         }
 
         // PUT api/<Client>/5

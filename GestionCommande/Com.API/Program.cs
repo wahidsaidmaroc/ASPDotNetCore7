@@ -1,6 +1,8 @@
 global using Service;
-
-
+using DAL.Data;
+using Infrastructure;
+using Infrastructure.SeedWorks;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,21 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+
+var myconn = builder.Configuration.GetConnectionString("ConnectionStrings_DefaultConnection");
+
+
+//La connection.
+builder.Services.AddDbContextFactory<FormationOumdinAcademyContext>(options =>
+options.UseSqlServer(myconn));
+
+
+
 builder.Services.AddScoped<IClientService, ClientService>();
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 

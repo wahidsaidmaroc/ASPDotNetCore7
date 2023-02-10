@@ -1,4 +1,6 @@
-﻿using Dto;
+﻿using DAL.Models;
+using Dto;
+using Infrastructure.SeedWorks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,19 +9,50 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    public class ClientService : IClientService
+    public class ClientService : BaseService, IClientService
     {
+        private readonly IRepository<TClient> _clientRepo;
+
+        public ClientService(
+            IRepository<TClient> clientRepo,
+            IUnitOfWork unitOfWork) : base(unitOfWork)
+        {
+            _clientRepo = clientRepo;
+        }
+
+
+
         //public async Task<Client> Get(int id)
         //{
         //    return await _basketRepo.GetAsync(id);
         //}
 
-        public async Task<ClientCreateDto> Create(int userId)
+        public async Task<int> Create(ClientCreateDto obj)
         {
+            var m = new TClient()
+            {
+                Adresse = obj.Adresse,
+                Id = obj.Id,
+                Client = obj.Nom
+            };
             //var basket = new Basket(userId);
-            //_basketRepo.Add(basket);
-            //await UnitOfWork.SaveChangeAsync();
-            return null;
+            _clientRepo.Add(m);
+            await UnitOfWork.SaveChangeAsync();
+            return m.Id;
+        }
+
+        public async Task<int> GetList(ClientCreateDto obj)
+        {
+            var m = new TClient()
+            {
+                Adresse = obj.Adresse,
+                Id = obj.Id,
+                Client = obj.Nom
+            };
+            //var basket = new Basket(userId);
+            _clientRepo.Add(m);
+            await UnitOfWork.SaveChangeAsync();
+            return m.Id;
         }
 
         //public async Task AddItem(int basketId, int productId)
