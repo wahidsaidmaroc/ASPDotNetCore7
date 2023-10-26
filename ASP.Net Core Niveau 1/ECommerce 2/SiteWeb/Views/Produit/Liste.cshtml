@@ -1,0 +1,21 @@
+﻿<div class="row row-cols-1 row-cols-md-3 g-4">
+
+    @for (int i = 1; i <= 10; i++)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/Produit.jpeg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Produit @i</h5>
+                    <p class="card-text">Description @i</p>
+                    <a asp-controller="Produit" asp-action="Detail" class="btn btn-primary">Détail</a>
+
+                </div>
+            </div>
+        </div>
+    }
+
+    
+   
+</div>
