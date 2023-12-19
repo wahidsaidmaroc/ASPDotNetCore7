@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BuX9ULLQRurCW+KcKpi0mmJWwkbai0QqIXxvNwcdbKfw78OKTkLKjfGL6PDu4fRtFiYnQd4O7OJK7E+3xsb/Hg==",
+  "dgSpecHash": "6wedDyLZD10+xa0s8r4exytsUby9rEhqsR+wW7hop++Iavmyws6PqAt+T6rFcaMudJvmulZEVgxkanvdiXHRxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Said\\Desktop\\Atelier\\ASP.Net Core 1\\ECommerce\\SiteWeb\\SiteWeb.csproj",
+  "projectFilePath": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 1\\SiteWeb\\SiteWeb.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

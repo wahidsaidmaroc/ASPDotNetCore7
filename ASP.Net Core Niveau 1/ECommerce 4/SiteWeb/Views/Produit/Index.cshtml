@@ -1,0 +1,25 @@
+﻿@model List<Models.Categorie.CategorieListViewModel>
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["TitrePage"]</h1>
+    <p>@ViewData["DescriptioPage"]</p>
+</div>
+
+@foreach (var item in Model)
+{
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">@item.Nom</h5>
+            <p class="card-text">@item.Description </p>
+            <p class="card-text">
+                <a asp-controller="Produit" asp-route-id="@item.Id" asp-action="Liste" class="btn btn-primary">Détail</a>
+
+            </p>
+        </div>
+        <img src="~/Produit.jpeg" class="card-img-bottom" alt="...">
+    </div>
+
+}   
+
+
+

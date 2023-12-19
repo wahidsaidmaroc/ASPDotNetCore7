@@ -1,0 +1,11 @@
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\bin\Debug\net7.0\Models.deps.json
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\bin\Debug\net7.0\Models.dll
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\bin\Debug\net7.0\Models.pdb
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\obj\Debug\net7.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\obj\Debug\net7.0\Models.AssemblyInfoInputs.cache
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\obj\Debug\net7.0\Models.AssemblyInfo.cs
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\obj\Debug\net7.0\Models.csproj.CoreCompileInputs.cache
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\obj\Debug\net7.0\Models.dll
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\obj\Debug\net7.0\refint\Models.dll
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\obj\Debug\net7.0\Models.pdb
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 3\Models\obj\Debug\net7.0\ref\Models.dll
