@@ -126,3 +126,5 @@ C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 4\SiteWeb\o
 C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 4\SiteWeb\obj\Debug\net7.0\SiteWeb.pdb
 C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 4\SiteWeb\obj\Debug\net7.0\SiteWeb.genruntimeconfig.cache
 C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 4\SiteWeb\obj\Debug\net7.0\ref\SiteWeb.dll
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 4\SiteWeb\bin\Debug\net7.0\BLL.dll
+C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 4\SiteWeb\bin\Debug\net7.0\BLL.pdb

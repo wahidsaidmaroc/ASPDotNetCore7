@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BLL.NosService;
+using Microsoft.AspNetCore.Mvc;
+using Models.Service;
 
 namespace SiteWeb.Controllers
 {
@@ -6,7 +8,17 @@ namespace SiteWeb.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            NosService nosService = new NosService();
+            return View(nosService.ToList());
+        }
+
+        public IActionResult Details(int id)
+        {
+         
+            ViewData["Titre"] = "Mes Service " ;
+            NosService nosService = new NosService();
+
+            return View(nosService.ToDetail());
         }
     }
 }

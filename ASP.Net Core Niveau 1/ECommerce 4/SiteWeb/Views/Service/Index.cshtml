@@ -1,5 +1,28 @@
-﻿
+﻿@model List<Models.Service.ServiceListVM>
 
 <div class="text-center">
-    <h1 class="display-4">Service</h1>
+    <h1 class="display-4">Nos service</h1>
 </div>
+
+
+
+@foreach (var item in Model)
+{
+
+    <div class="card">
+        <div class="card-body">
+
+            <h3 class="card-title display-6">
+            <a asp-action="Details" asp-controller="Service">
+                    @item.Titre
+            </a>
+            </h3>
+            <p class="card-text">
+                @item.Description ...
+            </p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+     
+    </div>
+
+}
