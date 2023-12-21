@@ -14,7 +14,7 @@ namespace SiteWeb.Controllers
         {
             var list = new List<CategorieListViewModel>();
 
-            for (int i = 1; i <=10; i++)
+            for (int i = 1; i <=4; i++)
             {
                 var m = new CategorieListViewModel { Id = i, Nom = $"Catégorie {i}", Description = $"Description de la Catégorie {i}" };
                 list.Add(m);
@@ -54,11 +54,16 @@ namespace SiteWeb.Controllers
         /// <returns></returns>
         public IActionResult Detail()
         {
-            if (true)
-            {
-                return View("DetailPromotion");
-            }
-            return View();
+           
+            ProduitDetailVM vm = new ProduitDetailVM();
+            vm.Id = 1;
+            vm.Prix = 300;
+            vm.Titre = "Casque";
+            vm.Description = "P9 Casque Bluetooth P9 Sans Fil, Ecouteur Bluetooth 5.0";
+
+            ViewData["Title"] = vm.Titre;
+            ViewData["Description"] = vm.Description;
+            return View(vm);
         }
     }
 }

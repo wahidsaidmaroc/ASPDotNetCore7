@@ -7,6 +7,6 @@ namespace Models.Produit
         public string Titre { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public double Prix { get; set; }
-        public int MyProperty { get; set; }
+
     }
 }

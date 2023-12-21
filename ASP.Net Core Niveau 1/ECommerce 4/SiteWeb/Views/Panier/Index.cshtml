@@ -1,0 +1,51 @@
+﻿@model Models.Panier.PanierVM;
+<div class="text-center">
+    <h1 class="display-4">@ViewData["NomPanier"]</h1>
+</div>
+
+
+<table class="table">
+    <thead>
+
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Prix</th>
+            <th scope="col">Quantite</th>
+            <th scope="col">Montant</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var i in Model.L)
+        {
+        
+            <tr>
+                <td>
+                    <img src="@i.NomImage">
+                    <br/>
+                @i.Description
+            
+                </td>
+                <td>@i.PrixProduit</td>
+            <td>@i.Quantite</td>
+            <td>@i.Total</td>
+
+                <td>
+                    
+                
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Supprimer</button>
+
+                    </div>
+                    
+            </td>
+        </tr>
+        }
+       
+       
+    </tbody>
+</table>
+
+<a asp-area="" asp-controller="Commande" class="btn btn-primary btn-lg " asp-action="index">Passer ma Commande</a>
+

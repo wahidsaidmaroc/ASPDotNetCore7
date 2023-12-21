@@ -16,12 +16,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\DevOps\Demo GitHub\ASPDotNetCore7\ASP.Net Core Niveau 1\ECommerce 4\SiteWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 4/SiteWeb/Views/Commande/FinCommande.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVcRmluQ29tbWFuZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 4/SiteWeb/Views/Commande/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 4/SiteWeb/Views/Commande/Recapitulatif.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWFuZGVcUmVjYXBpdHVsYXRpZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 4/SiteWeb/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 4/SiteWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 4/SiteWeb/Views/Inscription/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpcHRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 4/SiteWeb/Views/Paiement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFpZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 4/SiteWeb/Views/Panier/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuaWVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 4/SiteWeb/Views/Produit/Detail.cshtml]

@@ -10,4 +10,9 @@
     <ProjectReference Include="..\Models\Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Produit\2\" />
+    <Folder Include="wwwroot\Produit\3\" />
+  </ItemGroup>
+
 </Project>

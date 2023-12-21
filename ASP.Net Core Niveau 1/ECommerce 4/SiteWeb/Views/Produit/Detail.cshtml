@@ -1,1 +1,22 @@
-﻿Detail produit
+﻿@model Models.Produit.ProduitDetailVM;
+
+
+
+
+<div class="card mb-3" style="max-width: 540px;">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="~/produit/1/1_015.jpg" class="img-fluid rounded-start" alt="Casque">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Titre</h5>
+                <p class="card-text">@Model.Description</p>
+                <p class="card-text"><small class="text-muted">@Model.Prix dhs</small></p>
+
+                <a asp-area="" class="btn " asp-controller="Panier" asp-action="Index" asp-route-id="1">Ajouter panier</a>
+
+            </div>
+        </div>
+    </div>
+</div>
