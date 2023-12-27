@@ -31,5 +31,21 @@ namespace BLL
             return list;
 
         }
+
+        public ProduitDetailVM Detail(int id)
+        {
+            var source = new ProduitRepos();
+            var objSource  = source.Read(id);
+
+
+            ProduitDetailVM obj = new ProduitDetailVM();
+
+            obj.Id = objSource.Id;
+            obj.Description = objSource.Description;
+            obj.Prix = objSource.Prix;
+
+
+            return obj;
+        }
     }
 }

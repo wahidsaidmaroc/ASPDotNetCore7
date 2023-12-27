@@ -6,7 +6,7 @@ namespace Models.Produit
         public int Id { get; set; }
         public string Titre { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public double Prix { get; set; }
+        public decimal Prix { get; set; }
 
     }
 }

@@ -33,4 +33,5 @@ public class Produit
     public bool EstRemise { get; set; }
     public decimal RemiseEnDh { get; set; }
 
+    public int IdMarque { get; set; }
 }

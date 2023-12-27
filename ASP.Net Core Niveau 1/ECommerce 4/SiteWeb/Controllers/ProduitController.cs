@@ -1,5 +1,6 @@
 ﻿using BLL;
 using Microsoft.AspNetCore.Components.RenderTree;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Models.Produit;
 
@@ -45,18 +46,18 @@ namespace SiteWeb.Controllers
         ///  Adresse Serveur/Produit/Detail
         /// </summary>
         /// <returns></returns>
-        public IActionResult Detail()
+        public IActionResult Detail(int id)
         {
-           
-            ProduitDetailVM vm = new ProduitDetailVM();
-            vm.Id = 1;
-            vm.Prix = 300;
-            vm.Titre = "Casque";
-            vm.Description = "P9 Casque Bluetooth P9 Sans Fil, Ecouteur Bluetooth 5.0";
 
-            ViewData["Title"] = vm.Titre;
-            ViewData["Description"] = vm.Description;
-            return View(vm);
+            if (id == null ) { return NotFound(); }
+           
+            ProduitService produitService = new ProduitService();
+            var model = produitService.Detail(id);
+            ViewData["Title"] = model.Titre;
+            ViewData["Description"] = model.Description;
+
+
+            return View(model);
         }
     }
 }
