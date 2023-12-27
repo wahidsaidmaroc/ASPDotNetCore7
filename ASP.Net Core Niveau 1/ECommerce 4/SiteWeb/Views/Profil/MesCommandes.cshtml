@@ -1,0 +1,27 @@
+﻿@model List<Models.Profil.MesCommandesVM>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">N°</th>
+            <th scope="col">Date</th>
+            <th scope="col">Statut</th>
+            <th scope="col">Montant</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Date</td>
+                <td>@item.Statut</td>
+                <td>@item.Montant</td>
+            </tr>
+        }
+
+       
+
+    </tbody>
+</table>

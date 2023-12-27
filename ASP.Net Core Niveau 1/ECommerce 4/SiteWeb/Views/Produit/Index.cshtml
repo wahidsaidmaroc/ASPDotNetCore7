@@ -7,7 +7,7 @@
 
 @foreach (var item in Model)
 {
-    string pathPict = $"imgCategorie/categorie{item.Id}.jpg";
+    string pathPict = $"imgCategorie/{item.NomImage}";
     <div class="card mb-3">
         <div class="row">
             <div class="col">
@@ -20,8 +20,11 @@
             <h5 class="card-title">@item.Nom</h5>
             <p class="card-text">@item.Description </p>
             <p>
-                <a asp-area="" class="btn btn-primary" asp-controller="Produit" 
-                asp-action="Liste">Détail</a>
+                <a asp-area="" class="btn btn-primary" 
+                asp-controller="Produit" 
+                asp-action="Liste"
+                asp-route-id="@item.Id"
+                >Détail</a>
 
             </p>
         </div>

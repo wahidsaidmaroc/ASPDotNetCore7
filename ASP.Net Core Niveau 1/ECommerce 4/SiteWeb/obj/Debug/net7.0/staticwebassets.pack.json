@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\SiteWeb.bundle.scp.css"
     },
     {
+      "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\Logo.jpg",
+      "PackagePath": "staticwebassets\\Logo.jpg"
+    },
+    {
       "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\Produit.png",
       "PackagePath": "staticwebassets\\Produit.png"
     },
@@ -47,10 +51,6 @@
     {
       "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\imgCarousal\\img1.jpg",
       "PackagePath": "staticwebassets\\imgCarousal\\img1.jpg"
-    },
-    {
-      "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\imgCarousal\\img2.jpg",
-      "PackagePath": "staticwebassets\\imgCarousal\\img2.jpg"
     },
     {
       "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\imgCarousal\\img3.jpg",

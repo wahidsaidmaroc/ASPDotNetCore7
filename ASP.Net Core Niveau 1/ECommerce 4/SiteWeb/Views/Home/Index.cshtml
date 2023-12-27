@@ -1,19 +1,31 @@
-﻿
-
-
-
+﻿@model Models.IndexHome.HomeVM
 
 <div class="row">
 
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="~/imgCarousal/img1.jpg" class="d-block w-100" alt="...">
-        </div>
 
-        <div class="carousel-item">
-            <img src="~/imgCarousal/img3.jpg" class="d-block w-100" alt="...">
-        </div>
+        @foreach (var item in Model.Carrousel)
+            {
+                if(item.Id == 1)
+                {
+                    <div class="carousel-item active">
+                        <img src="~/imgCarousal/@item.NomImage"
+                             class="d-block w-100" alt="...">
+                    </div>
+
+                }
+            else
+            {
+                <div class="carousel-item ">
+                    <img src="~/imgCarousal/@item.NomImage"
+                         class="d-block w-100" alt="...">
+                </div>
+                }
+            }
+ 
+
+
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -12,6 +12,8 @@
 </head>
 <body>
 
+
+
     <header>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -37,18 +39,36 @@
                         <a class="nav-link" href="~/Contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled">Blog</a>
+                        <a  class="nav-link ">Blog</a>
                     </li>
                 </ul>
+
+
+                    <div class="flex-shrink-0 dropdown">
+                        <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu text-small shadow" style="">
+                            <li><a class="dropdown-item" asp-action="Index" asp-controller="Profil">Mon Profil</a></li>
+                            <li><a class="dropdown-item" asp-action="MesCommandes" asp-controller="Profil">Mes commandes</a></li>
+                            <li><a class="dropdown-item" asp-action="MesPaiements" asp-controller="Profil">Mes Paiements</a></li>
+
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Déconnecter</a></li>
+                        </ul>
+                    </div>
             </div>
+
         </div>
+
     </nav>
    
     </header>
 
     <div class="container">
         <main role="main" class="pb-3">
-        @RenderBody()
+
+            @RenderBody()
 
     </main>
     </div>
@@ -58,6 +78,7 @@
             &copy; 2023 - WebApplication1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

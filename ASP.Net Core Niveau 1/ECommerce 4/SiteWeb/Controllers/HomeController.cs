@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BLL.Home;
+using Microsoft.AspNetCore.Mvc;
+using Models.IndexHome;
 using SiteWeb.Models;
 using System.Diagnostics;
 
@@ -20,8 +22,8 @@ namespace SiteWeb.Controllers
         /// <returns></returns>
         public IActionResult Index()
         {
-            return View();
-
+            IndexService indexService = new IndexService();
+            return View(indexService.GetPageHomeVM());
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

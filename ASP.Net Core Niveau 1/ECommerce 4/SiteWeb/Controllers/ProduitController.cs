@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components.RenderTree;
+﻿using BLL;
+using Microsoft.AspNetCore.Components.RenderTree;
 using Microsoft.AspNetCore.Mvc;
 using Models.Produit;
 
@@ -12,18 +13,12 @@ namespace SiteWeb.Controllers
         /// <returns></returns>
         public IActionResult Index()
         {
-            var list = new List<CategorieListViewModel>();
-
-            for (int i = 1; i <=4; i++)
-            {
-                var m = new CategorieListViewModel { Id = i, Nom = $"Catégorie {i}", Description = $"Description de la Catégorie {i}" };
-                list.Add(m);
-            }
+            CategorieService categorieService = new CategorieService();
 
             ViewData["TitrePage"] = "Nos Produits par Catégorie";
             ViewData["DescriptioPage"] = "Description de la page Catégorie";
             
-            return View(list);
+            return View(categorieService.ListDetailVM());
         }
 
         /// <summary>

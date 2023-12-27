@@ -12,9 +12,12 @@
             <div class="card-body">
                 <h5 class="card-title">@Model.Titre</h5>
                 <p class="card-text">@Model.Description</p>
-                <p class="card-text"><small class="text-muted">@Model.Prix dhs</small></p>
+                <p class="card-text">
+                    <small class="text-muted">@Model.Prix Dh</small></p>
 
-                <a asp-area="" class="btn " asp-controller="Panier" asp-action="Index" asp-route-id="1">Ajouter panier</a>
+                <a asp-area="" class="btn "
+                asp-controller="Panier" asp-action="Index" 
+                asp-route-id="1">Ajouter panier</a>
 
             </div>
         </div>

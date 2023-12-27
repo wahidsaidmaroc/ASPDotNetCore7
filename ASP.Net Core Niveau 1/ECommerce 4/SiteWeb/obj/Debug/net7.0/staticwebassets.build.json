@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o/98vA5r555r6tGVR3/VHFaG/ntX24Jpg86WTSTn0XM=",
+  "Hash": "1sQXCwPPIdw3b0HkxrR1DNBVOeEATXk+fJk2yF0EmpU=",
   "Source": "SiteWeb",
   "BasePath": "_content/SiteWeb",
   "Mode": "Default",
@@ -100,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgCarousal\\img1.jpg"
-    },
-    {
-      "Identity": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\imgCarousal\\img2.jpg",
-      "SourceId": "SiteWeb",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\",
-      "BasePath": "_content/SiteWeb",
-      "RelativePath": "imgCarousal/img2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imgCarousal\\img2.jpg"
     },
     {
       "Identity": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\imgCarousal\\img3.jpg",
@@ -1188,6 +1171,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\Logo.jpg",
+      "SourceId": "SiteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\",
+      "BasePath": "_content/SiteWeb",
+      "RelativePath": "Logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Logo.jpg"
     },
     {
       "Identity": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\Produit.png",
