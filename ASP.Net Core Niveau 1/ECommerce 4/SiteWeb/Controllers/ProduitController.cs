@@ -27,20 +27,18 @@ namespace SiteWeb.Controllers
         /// <returns></returns>
         public IActionResult Liste(int id)
         {
-            Random rd= new Random();
-            var list = new List<ProduitListVM>();
 
-            for (int i = 1; i <= 10; i++)
+            if (id == 0 )
             {
-                
-                var m = new ProduitListVM { Id = i, Nom = $"Produit {i}", Description = $"Description du produit {i}",Prix= rd.Next(10,200)};
-                list.Add(m);
+                return NotFound();
             }
+            ProduitService produitService = new ProduitService();
 
-            ViewData["TitrePage"] = $"Le produit de la categorie {id}";
+
+             ViewData["TitrePage"] = $"Le produit de la categorie {id}";
             ViewData["DescriptioPage"] = "Description de la page Catégorie";
 
-            return View(list);
+            return View(produitService.ListParCategorie(id));
         }
         
         /// <summary>

@@ -57,6 +57,10 @@
       "PackagePath": "staticwebassets\\imgCarousal\\img3.jpg"
     },
     {
+      "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\imgCarousal\\laptop.jpg",
+      "PackagePath": "staticwebassets\\imgCarousal\\laptop.jpg"
+    },
+    {
       "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\imgCategorie\\Categorie1.jpg",
       "PackagePath": "staticwebassets\\imgCategorie\\Categorie1.jpg"
     },

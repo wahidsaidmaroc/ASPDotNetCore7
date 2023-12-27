@@ -28,4 +28,9 @@ public class Produit
     public string NomImage { get; set; } = string.Empty;
     [Column("DateCreation", TypeName = "DateTime2")]
     public DateTime DateCreation { get; set; }
+    public int Note { get; set; }
+    public bool EstDispo { get; set; }
+    public bool EstRemise { get; set; }
+    public decimal RemiseEnDh { get; set; }
+
 }

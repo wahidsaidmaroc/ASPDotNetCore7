@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1sQXCwPPIdw3b0HkxrR1DNBVOeEATXk+fJk2yF0EmpU=",
+  "Hash": "5ufH/afMfnRcahCWSi3fKqFDVeoBxjCJxqB5oHVygwQ=",
   "Source": "SiteWeb",
   "BasePath": "_content/SiteWeb",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imgCarousal\\img3.jpg"
+    },
+    {
+      "Identity": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\imgCarousal\\laptop.jpg",
+      "SourceId": "SiteWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\",
+      "BasePath": "_content/SiteWeb",
+      "RelativePath": "imgCarousal/laptop.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgCarousal\\laptop.jpg"
     },
     {
       "Identity": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 4\\SiteWeb\\wwwroot\\imgCategorie\\Categorie1.jpg",
