@@ -1,0 +1,36 @@
+﻿@model List<Models.Categorie.CategorieListViewModel>
+
+@* <div class="text-center">
+    <h1 class="display-4">@ViewData["TitrePage"]</h1>
+    <p>@ViewData["DescriptioPage"]</p>
+</div> *@
+
+@foreach (var item in Model)
+{
+    string pathPict = $"imgCategorie/{item.NomImage}";
+    <div class="card mb-3">
+        <div class="row">
+            <div class="col">
+                <img src="@pathPict" style="height : 200px" class="card-img-top img-fluid" alt="...">
+
+            </div>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">@item.Nom</h5>
+            <p class="card-text">@item.Description </p>
+            <p>
+                <a asp-area="" class="btn btn-primary" 
+                asp-controller="Produit" 
+                asp-action="Liste"
+                asp-route-id="@item.Id"
+                >Détail</a>
+
+            </p>
+        </div>
+    </div>
+
+}   
+
+
+

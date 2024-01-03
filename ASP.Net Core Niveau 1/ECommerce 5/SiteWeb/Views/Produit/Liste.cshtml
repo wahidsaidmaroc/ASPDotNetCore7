@@ -1,0 +1,27 @@
+﻿@model List<Models.Produit.ProduitListVM>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/Produit.png"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Nom</h5>
+                    <p class="card-text">@item.Description</p>
+                    <a asp-controller="Produit" 
+                    asp-action="Detail" 
+                    class="btn btn-primary"
+                    asp-route-id="@item.Id">Détail</a>
+
+                </div>
+            </div>
+        </div>
+
+    }        
+
+
+    
+   
+</div>

@@ -1,0 +1,59 @@
+﻿@model Models.IndexHome.HomeVM
+
+<div class="row">
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+        @foreach (var item in Model.Carrousel)
+            {
+                if(item.Id == 1)
+                {
+                    <div class="carousel-item active">
+                        <img src="~/imgCarousal/@item.NomImage"
+                             class="d-block w-100" alt="...">
+                    </div>
+
+                }
+            else
+            {
+                <div class="carousel-item ">
+                    <img src="~/imgCarousal/@item.NomImage"
+                         class="d-block w-100" alt="...">
+                </div>
+                }
+            }
+ 
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+<br />
+
+<div class="row">
+
+@for (int i = 1; i < 4; i++)
+{
+    var nom = $"Promo/ProduitPromo{i}.jpg";
+
+        <div class="col-sm-4">
+    <div class="card" >
+
+                <img src="@nom" class="card-img-top img-thumbnail" alt="...">
+        <div class="card-body">
+            <p class="card-text">Produit A @i.</p>
+        </div>
+            </div>
+        </div>
+}
+
+</div>

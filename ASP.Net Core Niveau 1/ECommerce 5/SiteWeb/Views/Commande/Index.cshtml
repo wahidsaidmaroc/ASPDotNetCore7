@@ -1,0 +1,48 @@
+﻿@model Models.Commande.CommandeVM 
+<div class="text-center">
+    <h1 class="display-4">@ViewData["TitrePage"]</h1>
+</div>
+
+
+<div>
+
+    <p>N° Commande : @Model.Numero</p>
+    <p>N° Commande : @Model.Date</p>
+</div>
+
+<table class="table">
+    <thead>
+
+        <tr>
+            <th scope="col"></th>
+            <th scope="col">Prix</th>
+            <th scope="col">Quantite</th>
+            <th scope="col">Montant</th>
+
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var i in Model.LigneCommandes)
+        {
+
+            <tr>
+                <td>
+                    <img src="~/Produit/1/1_015.jpg" style="height : 100px">
+                    <br />
+                    @i.Description
+
+                </td>
+                <td>@i.PU</td>
+                <td>@i.Quantite</td>
+                <td>@i.Montant</td>
+
+               
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+<a asp-action="index" asp-controller="Inscription" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Je valide ma Commande</a>

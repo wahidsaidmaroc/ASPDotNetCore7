@@ -1,0 +1,16 @@
+﻿@model Models.Service.ServiceDetailVM
+
+
+<div class="card text-center">
+    <div class="card-header">
+        @ViewData["Titre"]
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">@Model.Titre</h5>
+        <p class="card-text">@Model.Description</p>
+
+    </div>
+    <div class="card-footer text-muted">
+        @Model.DateCreation
+    </div>
+</div>

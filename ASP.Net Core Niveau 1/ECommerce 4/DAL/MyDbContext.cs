@@ -8,8 +8,15 @@ namespace DAL
     {
 
         public DbSet<Categorie> Categories { get; set; }
+        public DbSet<Service> Services { get; set; }
         public DbSet<Produit> Produits { get; set; }
+        public DbSet<Commande> Commandes { get; set; }
+        public DbSet<CommandeProduit> CommandeProduits { get; set; }
         public DbSet<Caroussel> Caroussels { get; set; }
+        public DbSet<Panier> Paniers { get; set; }
+        public DbSet<PanierProduit> PanierProduits { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+
         protected override void OnConfiguring
             (DbContextOptionsBuilder optionsBuilder)
         {

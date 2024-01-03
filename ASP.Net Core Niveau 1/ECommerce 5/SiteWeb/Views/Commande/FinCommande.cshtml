@@ -1,0 +1,23 @@
+﻿@model Models.Commande.CommandeFinVM
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Titre"]</h1>
+</div>
+
+
+
+<h3>@Model.Nom @Model.Prenom </h3>
+<p>@Model.Adresse</p>
+
+
+@foreach(var item in Model.Ligne)
+{
+    
+    <p>@item.NomProduit (@item.Prix) </p>
+}
+
+
+
+===========================
+Total La commande : 
+<p>@Model.Montant</p>

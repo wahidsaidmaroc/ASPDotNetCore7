@@ -1,0 +1,16 @@
+﻿@model Models.Produit.AdminProduitAjouterVM
+
+
+<form asp-controller="Produit" asp-action="Create" 
+method="post">
+
+    Nom : <input asp-for="@Model.Nom">
+
+    <br />
+    Description : <input asp-for="@Model.Description">
+    <br />
+    Prix : <input asp-for="@Model.Prix">
+    <br />
+    Categorie : <input asp-for="@Model.IdCategorie">
+    <input type="submit" /> 
+</form>
