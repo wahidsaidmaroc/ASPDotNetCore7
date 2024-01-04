@@ -1,0 +1,24 @@
+﻿@model Models.Client.AdminCreateClientVM
+
+<form asp-controller="Client"
+asp-action="Create" method="post">
+
+
+    <label for="nom">Nom</label>
+    <input type="text" asp-for="Nom" /><br />
+
+    <label for="prenom">Prenom</label>
+    <input type="text" asp-for="Prenom" /><br />
+
+    <label for="email">Email</label>
+    <input type="email" asp-for="Email" /><br />
+
+    <label for="tel">Téléphone</label>
+    <input type="text" asp-for="Tel" /><br />
+
+    <label for="mdp">Mot de passe</label>
+    <input type="password" asp-for="MotPasse" /><br />
+
+    <button type="submit">Submit</button>
+
+</form>

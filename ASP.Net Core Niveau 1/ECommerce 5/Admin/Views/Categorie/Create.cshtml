@@ -1,0 +1,16 @@
+﻿@model Models.Categorie.AdminCreateCategorie
+
+<form asp-controller="Categorie" asp-action="Create"
+      method="post">
+
+    Categorie : <input asp-for="@Model.Nom">
+
+    <br />
+
+    Desc : <input asp-for="@Model.Description">
+
+    <br />
+    image : <input asp-for="@Model.NomImage">
+
+    <input type="submit" value="Save"/>
+</form>

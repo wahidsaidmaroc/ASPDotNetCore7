@@ -1,0 +1,36 @@
+﻿@model List<Models.Client.ClientListVM>
+<table>
+    <tr>
+        <td>
+            Nom
+        </td>
+        <td>
+            Prénom
+        </td>
+        <td>Email</td>
+        <td>Tél</td>
+        <td></td>
+
+        
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>@item.Nom</td>
+            <td>@item.Prenom</td>
+            <td>@item.Email</td>
+            <td>@item.Tel</td>
+            <td>
+                <a asp-route-id="@item.Id" asp-action="edit" asp-controller="Client">Editer</a>
+                <a asp-route-id="@item.Id" asp-action="delete" asp-controller="Client">Supprimer</a>
+                </td>
+
+        </tr>
+
+        
+
+    }
+    
+</table>
+<a asp-action="create" asp-controller="Client" >Ajouter</a>

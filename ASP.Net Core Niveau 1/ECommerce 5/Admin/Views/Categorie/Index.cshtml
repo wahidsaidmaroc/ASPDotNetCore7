@@ -1,0 +1,48 @@
+﻿@model List<Models.Categorie.AdminListCategorieMV>
+
+
+
+<a asp-controller="Categorie" asp-action="Create">Ajouter</a> |
+
+
+<div class="table-responsive small">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+
+                <th scope="col">Categorie</th>
+                <th scope="col">Nbr Produit</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.OrderBy(a => a.Nom))
+            {
+                <tr>
+                    <td>
+                        
+                        @item.Nom
+                    <div>
+                        <img src="@item.NomImg">
+
+                    </div>
+                    </td>
+                    <td>@item.NbrProduit</td>
+                    <td>
+
+                        <a asp-controller="Categorie" asp-action="Edit" asp-route-id="@item.Id">Modifier</a> |
+                        <a asp-controller="Categorie" asp-action="Delete" asp-route-id="@item.Id">Supprimer</a>
+
+                    </td>
+    
+                </tr>
+            }
+
+            
+
+
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,32 @@
+﻿@model List<Models.Service.AdminListService>
+
+
+
+    <a asp-action="create" asp-controller="Service">Ajouter un service</a>
+    <table>
+        <tr>
+            
+            <td>
+                Titre
+            </td>
+
+            <td></td>
+        </tr>
+    @foreach(var a in Model)
+    {
+        <tr>
+        
+            <td>
+                <a asp-action="Details" >@a.Titre</a>
+            </td>
+
+
+            <td>
+                <a asp-action="Update" asp-route-id="@a.Id">Modifier</a> |
+                <a asp-action="Delete" asp-route-id="@a.Id">Supprimer</a> 
+
+            </td>
+        </tr>
+    }
+</table>
+

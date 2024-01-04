@@ -6,6 +6,8 @@ namespace DAL
 {
     public class MyDbContext : DbContext
     {
+        public DbSet<Client> Clients { get; set; }
+
         public DbSet<Utilisateur> Utilisateurs { get; set; }
         public DbSet<Categorie> Categories { get; set; }
         public DbSet<Service> Services { get; set; }

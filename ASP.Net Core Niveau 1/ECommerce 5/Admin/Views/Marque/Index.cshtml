@@ -1,0 +1,19 @@
+﻿@model List<Models.Marque.ListMarqueVM>
+
+<a asp-controller="Marque" asp-action="create">ajouter</a>
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Image</th>
+    </tr>
+  
+        @foreach (var item in Model)
+        {
+ 
+                <tr>
+                    <th>@item.Nom</th>
+                    <th>@item.NomImg</th>
+                </tr>
+            
+        }
+</table>

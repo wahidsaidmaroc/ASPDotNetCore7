@@ -1,4 +1,6 @@
-﻿using DAL.Repos;
+﻿using DAL.Entity;
+using DAL.Migrations;
+using DAL.Repos;
 using Models.Service;
 using System.Collections.Generic;
 
@@ -33,6 +35,35 @@ public class NosService
             Titre = source.Titre,
             Description = source.Description        };
         return obj;
+    }
+
+    public void AjouterService(AdminServiceCreateMV obj)
+    {
+        ServiceRepos serviceRepos = new ServiceRepos();
+        Service service = new Service();
+        service.Titre = obj.Titre;
+        service.Description = obj.Description;
+
+        serviceRepos.Create(service);
+    }
+
+
+
+    public List<Models.Service.AdminListService> ToListAdmin()
+    {
+        ServiceRepos serviceRepos = new ServiceRepos();
+
+        List<Models.Service.AdminListService> listM = new List<Models.Service.AdminListService>();
+
+        foreach (var item in serviceRepos.All())
+        {
+            var obj = new Models.Service.AdminListService { Id = item.Id, Titre = item.Titre };
+
+            listM.Add(obj);
+        }
+
+
+        return listM;
     }
 
 }

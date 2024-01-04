@@ -1,0 +1,20 @@
+﻿@model Models.Blog.AdminBlogCreateMV
+
+
+<form asp-controller="Blog" asp-action="Create">
+
+    Titre : <input type="text"  asp-for="Titre"/> <br />
+
+    Categorie : <input type="text" asp-for="Categorie" /> <br />
+
+    Description :
+    <textarea asp-for="Description" rows="10" cols="100">
+    </textarea>
+
+
+
+
+
+    <input type="submit" value="Save" />
+
+</form>

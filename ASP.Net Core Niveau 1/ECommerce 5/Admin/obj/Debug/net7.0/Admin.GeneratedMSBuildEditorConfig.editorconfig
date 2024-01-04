@@ -20,6 +20,34 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Blog/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Blog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Categorie/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Categorie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Client/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Client/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -28,12 +56,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Marque/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFycXVlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Marque/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFycXVlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Produit/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Produit/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVpdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Service/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/DevOps/Demo GitHub/ASPDotNetCore7/ASP.Net Core Niveau 1/ECommerce 5/Admin/Views/Shared/Error.cshtml]

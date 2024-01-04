@@ -1,4 +1,5 @@
-﻿using DAL.Repos;
+﻿using DAL.Entity;
+using DAL.Repos;
 using Models.Blog;
 using Models.Service;
 using System;
@@ -50,6 +51,19 @@ namespace BLL
             return blogDetailVM;
         }
 
+
+        public void AjouterBlog(AdminBlogCreateMV model)
+        {
+            var blogRepos = new BlogRepos();
+            Blog blog = new Blog
+            {
+                Categorie = model.Categorie,
+                DateCreation = DateTime.Now,
+                Description = model.Description,
+                Titre = model.Titre
+            };
+            blogRepos.Create(blog);
+        }
 
 
     }
