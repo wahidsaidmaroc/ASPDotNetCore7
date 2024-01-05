@@ -1,5 +1,8 @@
 ﻿@model Models.Produit.AdminProduitAjouterVM
 
+<div>@ViewData["Titre"]</div>
+
+
 
 <form asp-controller="Produit" asp-action="Create" 
 method="post">
@@ -11,6 +14,17 @@ method="post">
     <br />
     Prix : <input asp-for="@Model.Prix">
     <br />
-    Categorie : <input asp-for="@Model.IdCategorie">
+    Categorie :
+    <select asp-for="IdCategorie"
+            asp-items="@(new SelectList(ViewBag.ListCate, "Id", "Nom"))">
+            <option>Please select one</option>
+    </select>
+
+    Marque :
+    <select asp-for="IdMarque"
+            asp-items="@(new SelectList(ViewBag.ListMarque, "Id", "Nom"))">
+        <option>Please select one</option>
+    </select>
+
     <input type="submit" /> 
 </form>

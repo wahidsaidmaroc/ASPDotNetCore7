@@ -6,8 +6,11 @@ namespace DAL
 {
     public class MyDbContext : DbContext
     {
+        public DbSet<Marque> Marques { get; set; }
+        public DbSet<Pays> Payss { get; set; }
+        public DbSet<Ville> Villes { get; set; }
         public DbSet<Client> Clients { get; set; }
-
+        public DbSet<Contact> Contacts { get; set; }
         public DbSet<Utilisateur> Utilisateurs { get; set; }
         public DbSet<Categorie> Categories { get; set; }
         public DbSet<Service> Services { get; set; }

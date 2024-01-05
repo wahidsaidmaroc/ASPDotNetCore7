@@ -1,0 +1,71 @@
+﻿@model Models.Inscription.InscriptionVM
+
+@{
+    var a = 12;
+    var b = 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+<form asp-controller="Inscription" asp-action="CreationCompte">
+
+
+
+<div class="mb-3">
+Nom : 
+    <input class="form-control" type="text" asp-for="Nom">
+</div>
+
+
+
+
+
+<div class="mb-3">
+   Prnom
+    <input class="form-control" type="text" asp-for="Prenom">
+</div>
+
+
+
+<div class="mb-3">
+    <label class="form-label">Telephone</label>
+    <input class="form-control" asp-for="Tel" type="tel">
+</div>
+
+
+
+<div class="mb-3">
+    <label class="form-label">E-Mail</label>
+        <input class="form-control" asp-for="Mail" type="text">
+</div>
+
+
+<div class="mb-3">
+    <label class="form-label">Adresse</label>
+    <input class="form-control" asp-for="Adresse" type="text">
+</div>
+
+
+
+<div class="mb-3">
+    <label class="form-label">Mot de Passe</label>
+    <input class="form-control" asp-for="MotDePasse1" type="password">
+</div>
+
+    <div class="mb-3">
+        <label class="form-label">Confirmer Mot de Passe</label>
+        <input class="form-control" asp-for="MotDePasse2" type="password">
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+
+
+
+</form>

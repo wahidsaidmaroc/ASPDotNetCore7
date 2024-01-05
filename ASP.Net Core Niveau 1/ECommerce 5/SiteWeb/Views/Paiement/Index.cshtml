@@ -1,26 +1,32 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<form>
+﻿@model Models.Paiement.PaiementVm
+
+<form asp-action="index" asp-controller="Paiement">
     <div class="mb-3">
         <label for="nomprenom" class="form-label">Nom et Prenom</label>
-        <input type="text" class="form-control" id="nomprenom" aria-describedby="emailHelp">
+        <input type="text" class="form-control" id="nomprenom" asp-for="Nom">
         
     </div>
     <div class="mb-3">
         <label for="code" class="form-label">Code</label>
-        <input type="text" class="form-control" id="code">
+        <input type="text" class="form-control" asp-for="NumCarte">
     </div>
     <div class="mb-3">
         <label for="date" class="form-label">Date d'exp</label>
-        <input type="text" class="form-control" id="date">
+        <input type="text" class="form-control" asp-for="DateExpMois">  /      
+        <input type="text" class="form-control" asp-for="DateExpAnnee">        
+
     </div>
     <div class="mb-3">
         <label for="CVV" class="form-label">CVV</label>
-        <input type="text" class="form-control" id="CVV">
+        <input type="text" class="form-control" asp-for="Cvv">
     </div>
+
+
+    <input type="submit" />
     
-    <a asp-controller="commande" asp-action="fincommande" class="btn btn-primary">Payer</a>
+
 </form>
+
+
+
+

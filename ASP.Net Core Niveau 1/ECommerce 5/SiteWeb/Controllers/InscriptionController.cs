@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DAL.Entity;
+using Microsoft.AspNetCore.Mvc;
 using Models.Inscription;
+using BLL;
 
 namespace SiteWeb.Controllers
 {
@@ -17,13 +19,15 @@ namespace SiteWeb.Controllers
         }
 
         [HttpGet]
-        public IActionResult CreatioCompte()
+        public IActionResult CreationCompte()
         {
             return View();
         }
         [HttpPost]
-        public IActionResult CreatioCompte(InscriptionVM model)
+        public IActionResult CreationCompte(InscriptionVM model)
         {
+            ClientService service = new ClientService();
+            service.CreationCompte(model);
             return View();
         }
 

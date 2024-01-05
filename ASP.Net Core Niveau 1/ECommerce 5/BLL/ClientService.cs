@@ -2,6 +2,7 @@
 using DAL.Entity;
 using DAL.Repos;
 using Models.Client;
+using Models.Inscription;
 
 namespace BLL
 {
@@ -41,6 +42,21 @@ namespace BLL
             client.Nom = model.Nom;
             client.Prenom = model.Prenom;
             client.MotPasse = model.MotPasse;
+
+            repos.Create(client);
+
+        }
+
+        public void CreationCompte(InscriptionVM model)
+        {
+            ClientRepos repos = new ClientRepos();
+            Client client = new Client();
+            client.Email = model.Mail;
+            client.Tel = model.Tel;
+            client.Nom = model.Nom;
+            client.Prenom = model.Prenom;
+            client.MotPasse = model.MotDePasse1;
+
 
             repos.Create(client);
 

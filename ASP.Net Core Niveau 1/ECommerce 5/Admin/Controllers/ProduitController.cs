@@ -22,6 +22,15 @@ namespace Admin.Controllers
         // GET: ProduitController/Create
         public ActionResult Create()
         {
+            CategorieService categorieService = new CategorieService();
+            MarqueService marqueService = new MarqueService();
+
+
+            ViewData["Titre"] = "Creation Produit";
+
+            ViewBag.ListCate = categorieService.AdminListVM();
+            ViewBag.ListMarque = marqueService.GetListMarques();
+
             return View();
         }
 
@@ -35,7 +44,6 @@ namespace Admin.Controllers
 
             try
             {
-
                 ProduitService service = new ProduitService();
                 service.Create(model);
                 return RedirectToAction(nameof(Index));

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BLL;
+using Microsoft.AspNetCore.Mvc;
 using Models.Contact;
 
 namespace SiteWeb.Controllers
@@ -17,6 +18,8 @@ namespace SiteWeb.Controllers
         [HttpPost]
         public IActionResult Formulaire(FormulaireVM model)
         {
+            ContactService contactService = new ContactService(); 
+            contactService.Ajouter(model);
             return View();
         }
     }

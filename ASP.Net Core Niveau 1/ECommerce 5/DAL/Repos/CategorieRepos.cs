@@ -24,7 +24,5 @@ namespace DAL.Repos
             db.Categories.Add(entity);
             db.SaveChanges();
         }
-
-
     }
 }

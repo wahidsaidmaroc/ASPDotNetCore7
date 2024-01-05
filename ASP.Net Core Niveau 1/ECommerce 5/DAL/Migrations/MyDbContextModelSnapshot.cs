@@ -197,6 +197,63 @@ namespace DAL.Migrations
                     b.ToTable("T_CommandeProduit");
                 });
 
+            modelBuilder.Entity("DAL.Entity.Contact", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Adresse")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CodePostale")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("DateCreation")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("IdVille")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nom")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Prenom")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_Contact");
+                });
+
+            modelBuilder.Entity("DAL.Entity.Marque", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nom")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_Marque");
+                });
+
             modelBuilder.Entity("DAL.Entity.Panier", b =>
                 {
                     b.Property<int>("Id")
@@ -245,6 +302,24 @@ namespace DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("T_PanierProduit");
+                });
+
+            modelBuilder.Entity("DAL.Entity.Pays", b =>
+                {
+                    b.Property<int>("Code")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Code"));
+
+                    b.Property<string>("Nom")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Code");
+
+                    b.ToTable("T_Pays");
                 });
 
             modelBuilder.Entity("DAL.Entity.Produit", b =>
@@ -350,6 +425,27 @@ namespace DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("T_Utilisateur");
+                });
+
+            modelBuilder.Entity("DAL.Entity.Ville", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CodePays")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NomVille")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_Ville");
                 });
 #pragma warning restore 612, 618
         }

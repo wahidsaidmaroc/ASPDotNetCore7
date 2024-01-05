@@ -1,13 +1,13 @@
 ﻿@model Models.Contact.FormulaireVM
 
-<form class="row ">
+<form method="post" action="Formulaire">
     <div class="col-md-6">
         <label  class="form-label">Nom</label>
-        <input type="text" class="form-control" >
+        <input type="text" asp-for="Nom" class="form-control" >
     </div>
     <div class="col-md-6">
         <label  class="form-label">Prénom</label>
-        <input type="text" class="form-control" >
+        <input type="text" asp-for="Prenom" class="form-control">
     </div>
     <div class="col-12">
         <label  class="form-label">E-Mail</label>
@@ -15,11 +15,11 @@
     </div>
     <div class="col-12">
         <label  class="form-label">Adresse </label>
-        <input type="text" class="form-control"  placeholder="Apartment, studio, or floor">
+        <input type="text" class="form-control" asp-for="Adresse" placeholder="Apartment, studio, or floor">
     </div>
     <div class="col-md-6">
         <label class="form-label">Ville</label>
-        <input type="text" class="form-control" >
+        <input type="text" class="form-control" asp-for="Ville">
     </div>
     <div class="col-md-4">
         <label for="inputState" class="form-label">Pays</label>
@@ -29,7 +29,7 @@
     </div>
     <div class="col-md-2">
         <label  class="form-label">Code Postal</label>
-        <input type="text" class="form-control" >
+        <input type="text" class="form-control"asp-for="CodePostale" >
     </div>
     <div class="col-12">
         <div class="form-check">

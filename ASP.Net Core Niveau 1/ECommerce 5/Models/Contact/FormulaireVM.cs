@@ -21,8 +21,6 @@ namespace Models.Contact
         public string CodePostale { get; set; } = string.Empty;
         public string Ville { get; set; } = string.Empty;
 
-  
-
     }
 
 }

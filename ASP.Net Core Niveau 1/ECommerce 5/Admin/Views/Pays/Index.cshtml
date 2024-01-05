@@ -1,0 +1,18 @@
+﻿@model List<Models.Pays.PaysListvm>
+
+ <table>
+    <tr>
+  
+        <td>Nom</td>
+    </tr>
+
+@foreach (var item in Model)
+{
+    <tr>
+
+        <td> @item.Nom</td>
+        
+    </tr>
+
+}
+</table>

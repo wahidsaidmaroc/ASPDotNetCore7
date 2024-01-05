@@ -7,8 +7,9 @@ namespace SiteWeb.Controllers
 {
     public class PanierController : Controller
     {
-        public IActionResult Index(int id )
+        public IActionResult Index(int id, IFormCollection data )
         {
+            var qnt = data["nbrArticle"];
             if (id == 0 || id == null)
             {
                 return NotFound();

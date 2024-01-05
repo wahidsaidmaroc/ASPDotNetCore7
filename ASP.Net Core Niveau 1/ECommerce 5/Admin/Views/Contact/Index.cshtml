@@ -1,0 +1,24 @@
+﻿@model List<Models.Contact.ContactListvm>
+
+
+
+<table>
+    <tr>
+        <td>Nom</td>
+        <td>Prenom</td>
+        <td>DateCreation</td>
+    </tr>
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @item.Nom</td>
+            <td>@item.Prenom</td>
+            <td>@item.DateCreation</td>
+        </tr>
+
+    }
+   
+</table>
+

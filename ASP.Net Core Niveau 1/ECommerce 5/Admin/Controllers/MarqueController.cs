@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using BLL;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models.Marque;
 
@@ -29,10 +30,12 @@ namespace Admin.Controllers
         // POST: MarqueController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(MarqueAjouterVM  Model)
         {
             try
             {
+               MarqueService marqueService = new MarqueService();
+                marqueService.Ajoutmarques(Model);
                 return RedirectToAction(nameof(Index));
             }
             catch
