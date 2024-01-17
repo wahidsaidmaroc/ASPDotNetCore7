@@ -1,25 +1,47 @@
 ﻿@model List<Models.Produit.AdminProduitListVM>
 
 
+
+
+    <div>
+    <a asp-action="Create" asp-controller="Produit" class="btn btn-success btn-sm " tabindex="-1" 
+    role="button" aria-disabled="true">Créer un nouveau produit</a>
+
+
+    </div>
+
 <div class="table-responsive small">
     <table class="table table-striped table-sm">
         <thead>
             <tr>
-                <th scope="col"></th>
+             
                 <th scope="col">Produit</th>
                 <th scope="col">Categorie</th>
                 <th scope="col">Prix</th>
+                <th scope="col">
+
+
+
+                </th>
             </tr>
         </thead>
         <tbody>
 
+            @foreach (var item in Model)
+            {
+                <tr>
+    
+                    <td>@item.NomProduit</td>
+                    <td>@item.Categorie</td>
+                    <td>@item.Prix</td>
+                    <td>
+                        <a href="#" class="btn btn-success btn-sm " tabindex="-1" role="button" aria-disabled="true">Modifier</a>
 
-            <tr>
-                <td>1,015</td>
-                <td>random</td>
-                <td>information</td>
-                <td>text</td>
-            </tr>
+                        <a href="#" class="btn btn-danger btn-sm" tabindex="-1" role="button" aria-disabled="true">Supprimer</a>
+                    </td>
+                </tr>
+            }
+           
 
 
         </tbody>

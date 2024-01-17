@@ -1,4 +1,5 @@
 ﻿using BLL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models.Client;
@@ -7,6 +8,7 @@ namespace Admin.Controllers
 {
     public class ClientController : Controller
     {
+        [Authorize]
         // GET: ClientController
         public ActionResult Index()
         {
@@ -24,6 +26,8 @@ namespace Admin.Controllers
         [HttpGet]
         public ActionResult Create()
         {
+            PaysService paysService = new PaysService();
+            ViewBag.ListePays = paysService.List();
             return View();
         }
 

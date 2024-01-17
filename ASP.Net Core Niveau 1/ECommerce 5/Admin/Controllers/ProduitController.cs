@@ -1,16 +1,21 @@
 ﻿using BLL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models.Produit;
 
 namespace Admin.Controllers
 {
+    [Authorize]
+
     public class ProduitController : Controller
     {
         // GET: ProduitController
         public ActionResult Index()
         {
-            return View();
+            ProduitService service = new ProduitService();
+
+            return View(service.ListProduit());
         }
 
         // GET: ProduitController/Details/5
@@ -25,8 +30,8 @@ namespace Admin.Controllers
             CategorieService categorieService = new CategorieService();
             MarqueService marqueService = new MarqueService();
 
-
-            ViewData["Titre"] = "Creation Produit";
+   
+            ViewData["Title"] = "Création Produit";
 
             ViewBag.ListCate = categorieService.AdminListVM();
             ViewBag.ListMarque = marqueService.GetListMarques();
@@ -40,18 +45,24 @@ namespace Admin.Controllers
         public ActionResult Create(AdminProduitAjouterVM model)
         {
 
+            if (ModelState.IsValid)
+            {
+
+                try
+                {
+                    ProduitService service = new ProduitService();
+                    service.Create(model);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch
+                {
+                    return View();
+                }
 
 
-            try
-            {
-                ProduitService service = new ProduitService();
-                service.Create(model);
-                return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction(nameof(Create));
+
         }
 
         // GET: ProduitController/Edit/5

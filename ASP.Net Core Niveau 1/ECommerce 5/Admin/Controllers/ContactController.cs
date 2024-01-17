@@ -1,4 +1,5 @@
 ﻿using BLL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,6 +7,7 @@ namespace Admin.Controllers
 {
     public class ContactController : Controller
     {
+        [Authorize]
         // GET: ContactController
         public ActionResult Index()
         {

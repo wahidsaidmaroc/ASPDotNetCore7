@@ -11,6 +11,6 @@ namespace Models.Produit
         public int Id { get; set; }
         public string NomProduit { get; set; }
         public string Categorie { get; set; }
-        public double Prix { get; set; }
+        public decimal Prix { get; set; }
     }
 }

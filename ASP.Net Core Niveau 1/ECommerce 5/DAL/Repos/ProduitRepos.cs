@@ -1,6 +1,7 @@
 ﻿
 
 using DAL.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace DAL.Repos;
 
@@ -23,5 +24,20 @@ public class ProduitRepos
     {
         MyDbContext mydb = new MyDbContext();
         return mydb.Produits.ToList();
+    }
+
+    public void Update(Produit entity)
+    {
+        MyDbContext mydb = new MyDbContext();
+        mydb.Entry(entity).State = EntityState.Modified;
+        mydb.SaveChanges();
+    }
+
+    public void Delete(int id)
+    {
+        MyDbContext mydb = new MyDbContext();
+        Produit entity = mydb.Produits.Find(id);
+        mydb.Produits.Remove(entity);
+        mydb.SaveChanges();
     }
 }

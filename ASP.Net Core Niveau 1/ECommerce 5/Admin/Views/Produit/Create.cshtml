@@ -4,27 +4,66 @@
 
 
 
-<form asp-controller="Produit" asp-action="Create" 
+<form asp-controller="Produit"
+asp-action="Create" 
 method="post">
 
-    Nom : <input asp-for="@Model.Nom">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-    <br />
-    Description : <input asp-for="@Model.Description">
-    <br />
-    Prix : <input asp-for="@Model.Prix">
-    <br />
-    Categorie :
-    <select asp-for="IdCategorie"
-            asp-items="@(new SelectList(ViewBag.ListCate, "Id", "Nom"))">
-            <option>Please select one</option>
+    @Html.AntiForgeryToken()
+    <div class="mb-3">
+        <label class="form-label"> Nom : </label>
+        @Html.TextBoxFor(m => m.Nom, new { @class = "form-control" })
+        <span asp-validation-for="Nom" class="text-danger"></span>
+    </div>
+
+
+    <div class="mb-3">
+        <label class="form-label"> Description :  </label>
+        @Html.TextBoxFor(m => m.Description, new { @class = "form-control" })
+        <span asp-validation-for="Description" class="text-danger"></span>
+
+    </div>
+
+
+    <div class="mb-3">
+        <label class="form-label"> Prix :  </label>
+        
+        <div class="input-group">
+      
+            <input type="text" asp-for="@Model.Prix" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">Dh</span>
+            <span class="input-group-text">0.00</span>
+        </div>
+        <span asp-validation-for="Prix" class="text-danger"></span>
+    </div>
+
+
+
+    <div class="mb-3">
+
+        <label class="form-label"> Categorie :  </label>
+
+        <select asp-for="IdCategorie"
+                asp-items="@(new SelectList(ViewBag.ListCate, "Id", "Nom"))" class="form-select form-select-sm" aria-label="Small select example">
+        
+        </select>
+        <span asp-validation-for="IdCategorie" class="text-danger"></span>
+    </div>
+
+
+    
+    <div class="mb-3">
+
+        <label class="form-label"> Marque :  </label>
+
+        <select asp-for="IdMarque"
+                asp-items="@(new SelectList(ViewBag.ListMarque, "Id", "Nom"))" class="form-select form-select-sm" aria-label="Small select example">
+  
     </select>
+        <span asp-validation-for="IdMarque" class="text-danger"></span>
 
-    Marque :
-    <select asp-for="IdMarque"
-            asp-items="@(new SelectList(ViewBag.ListMarque, "Id", "Nom"))">
-        <option>Please select one</option>
-    </select>
+    </div>
 
-    <input type="submit" /> 
+    <input type="submit" value="Save" /> 
 </form>

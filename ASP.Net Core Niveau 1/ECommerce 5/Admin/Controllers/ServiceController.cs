@@ -1,6 +1,7 @@
 ﻿using BLL;
 using DAL.Entity;
 using DAL.Repos;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models.Service;
@@ -8,6 +9,7 @@ using System.Collections.Generic;
 
 namespace Admin.Controllers
 {
+    [Authorize]
     public class ServiceController : Controller
     {
         // GET: ServiceController

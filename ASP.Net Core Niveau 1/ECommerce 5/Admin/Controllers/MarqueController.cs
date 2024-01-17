@@ -1,12 +1,15 @@
 ﻿using BLL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models.Marque;
 
 namespace Admin.Controllers
 {
+    [Authorize]
     public class MarqueController : Controller
     {
+        [Authorize]
         // GET: MarqueController
         public ActionResult Index()
         {

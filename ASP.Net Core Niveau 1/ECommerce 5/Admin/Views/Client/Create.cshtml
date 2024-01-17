@@ -19,6 +19,12 @@ asp-action="Create" method="post">
     <label for="mdp">Mot de passe</label>
     <input type="password" asp-for="MotPasse" /><br />
 
+    Ville :
+    <select asp-for="IdPays"
+            asp-items="@(new SelectList(ViewBag.ListePays, "Code", "Nom"))">
+        <option>Please select one</option>
+    </select>
+
     <button type="submit">Submit</button>
 
 </form>

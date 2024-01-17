@@ -21,7 +21,6 @@ namespace BLL
             ProduitRepos repos = new ProduitRepos();
       
 
-
             foreach (var item in repos.ReadAll().Where(a => a.IdCategorie == idCategorie))
             {
                 ProduitListVM obj = new ProduitListVM()
@@ -32,6 +31,24 @@ namespace BLL
             return list;
 
         }
+
+        public List<Models.Produit.AdminProduitListVM> ListProduit() 
+        {
+            var list = new List<Models.Produit.AdminProduitListVM>();
+            ProduitRepos repos = new ProduitRepos();
+
+
+            foreach (var item in repos.ReadAll())
+            {
+                AdminProduitListVM obj = new AdminProduitListVM()
+                {  Id = item.Id, NomProduit = item.Titre, Prix = item.Prix };
+                list.Add(obj);
+            }
+
+            return list;
+        }
+        
+
 
         public ProduitDetailVM Detail(int id)
         {
@@ -48,7 +65,6 @@ namespace BLL
 
             return obj;
         }
-
 
         public void Create(AdminProduitAjouterVM obj)
         {

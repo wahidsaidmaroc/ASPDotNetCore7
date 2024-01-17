@@ -1,10 +1,12 @@
 ﻿using BLL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Models.Blog;
 
 namespace Admin.Controllers
 {
+    [Authorize]
     public class BlogController : Controller
     {
         // GET: BlogController

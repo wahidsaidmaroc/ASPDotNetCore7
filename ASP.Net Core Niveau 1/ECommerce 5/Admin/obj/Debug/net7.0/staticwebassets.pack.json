@@ -45,6 +45,18 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 5\\Admin\\wwwroot\\dashboard.css",
+      "PackagePath": "staticwebassets\\dashboard.css"
+    },
+    {
+      "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 5\\Admin\\wwwroot\\dashboard.js",
+      "PackagePath": "staticwebassets\\dashboard.js"
+    },
+    {
+      "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 5\\Admin\\wwwroot\\dashboard.rtl.css",
+      "PackagePath": "staticwebassets\\dashboard.rtl.css"
+    },
+    {
       "Id": "C:\\DevOps\\Demo GitHub\\ASPDotNetCore7\\ASP.Net Core Niveau 1\\ECommerce 5\\Admin\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
