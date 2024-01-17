@@ -18,6 +18,7 @@ namespace Admin.Controllers
                 return RedirectToAction("Index", "Home");
             return View();
         }
+
         [HttpPost]
         public IActionResult Index(UserAuthVM model)
         {

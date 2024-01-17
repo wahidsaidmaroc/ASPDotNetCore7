@@ -4,12 +4,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddAuthentication(
     CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(option => {
         option.LoginPath = "/Auth/Index";
         option.ExpireTimeSpan = TimeSpan.FromMinutes(10);
-
     });
 
 
